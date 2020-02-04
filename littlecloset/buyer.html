@@ -14,6 +14,17 @@
 <link rel="stylesheet" type="text/css" href="styles/checkout.css">
 <link rel="stylesheet" type="text/css" href="styles/checkout_responsive.css">
 </head>
+<style>
+    .checkout {
+      background-image: url('images/back.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+    .billing{
+        background:rgba(117, 140, 153, 0.8);;
+    }
+    </style>
 <body>
 
 <!-- Menu -->
@@ -65,62 +76,52 @@
 		</div>
 	</header>
 <br><br>
-    <div class="super_container_inner">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4 col-md-6">
-                    <div class="person"><br><br>
-                        <div class="buyer_image"><img src="images/sign_up.png" padding="20%"width="150" height="150"alt=""><h3>Buyer Registration</h3></div>
-                       
+    
+    <center>
+        <div class="checkout mx-auto" >
+            <div class="container">
+                <div class="row">
+                    
+                    <!-- Billing -->
+                    <div class="col-lg-6" style="margin: auto;">
+                        <div class="billing">
+                            <div class="checkout_title">Register</div>
+                            <div class="checkout_form_container">
+                                <form action="#" id="buyer_reg_form" class="checkout_form">
+                                    <div>
+                                            <!-- Name -->
+                                            <input type="text" id="buyer_name" class="checkout_input" placeholder=" Name" required="required">   
+                                    </div>
+                                    <div>
+                                        <!-- Mobile Number -->
+                                        <input type="number" id="buyer_no" placeholder="Mobile Number" class="checkout_input"required="required">
+                                    </div>
+                                    <div>
+                                        <!-- Email -->
+                                        <input type="email" id="buyer_email" class="checkout_input" placeholder="Email" required="required">
+                                    </div>
+                                    <div>
+                                        <!-- Location -->
+                                        <select name="checkout_country" id="buyer_location" class="dropdown_item_select checkout_input" require="required">
+                                            <option>Cities</option>
+                                            <option>Mumbai</option>
+                                            <option>Pune</option>
+                                            <option>Jaipur</option>
+                                            <option>Thane</option>
+                                        </select> 
+                                    </div>
+                                    <input type="submit" name="Register" value="Register" style="margin-left: 20%;">
+                                </form>
+                            </div>
+                        </div>
                     </div>
+    
                    
                 </div>
             </div>
-         </div>
-    </div>
-    
-    <div class="checkout">
-        <div class="container">
-            <div class="row">
-                
-                <!-- Billing -->
-                <div class="col-lg-6">
-                    <div class="billing">
-                        <div class="checkout_title">Register</div>
-                        <div class="checkout_form_container">
-                            <form action="#" id="buyer_reg_form" class="checkout_form">
-                                <div>
-                                        <!-- Name -->
-                                        <input type="text" id="buyer_name" class="checkout_input" placeholder=" Name" required="required">   
-                                </div>
-                                <div>
-                                    <!-- Mobile Number -->
-                                    <input type="number" id="buyer_no" placeholder="Mobile Number" class="checkout_input"required="required">
-                                </div>
-                                <div>
-                                    <!-- Email -->
-                                    <input type="email" id="buyer_email" class="checkout_input" placeholder="Email" required="required">
-                                </div>
-                                <div>
-                                    <!-- Location -->
-                                    <select name="checkout_country" id="buyer_location" class="dropdown_item_select checkout_input" require="required">
-                                        <option>Cities</option>
-                                        <option>Mumbai</option>
-                                        <option>Pune</option>
-                                        <option>Jaipur</option>
-                                        <option>Thane</option>
-                                    </select> 
-                                </div>
-                                <input type="submit" name="Register" value="Register" style="margin-left: 20%;">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-               
-            </div>
         </div>
-    </div>
+    </center>
+    
 
 </div>
 
